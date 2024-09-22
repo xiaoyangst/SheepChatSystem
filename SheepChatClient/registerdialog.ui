@@ -67,7 +67,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="user_lineEdit"/>
+           <widget class="QLineEdit" name="user_lineEdit">
+            <property name="placeholderText">
+             <string>请输入用户名</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -81,7 +85,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="email_lineEdit"/>
+           <widget class="QLineEdit" name="email_lineEdit">
+            <property name="placeholderText">
+             <string>请输入邮箱</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -98,6 +106,9 @@
            <widget class="QLineEdit" name="passwd_lineEdit">
             <property name="echoMode">
              <enum>QLineEdit::Password</enum>
+            </property>
+            <property name="placeholderText">
+             <string>请输入密码</string>
             </property>
            </widget>
           </item>
@@ -116,6 +127,9 @@
            <widget class="QLineEdit" name="ensurepasswd_lineEdit">
             <property name="echoMode">
              <enum>QLineEdit::Password</enum>
+            </property>
+            <property name="placeholderText">
+             <string>请确认密码</string>
             </property>
            </widget>
           </item>

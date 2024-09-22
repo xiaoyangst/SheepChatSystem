@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,13 +13,16 @@ RC_ICONS = chat.ico
 
 SOURCES += \
     global.cpp \
+    httpmanager.cpp \
     logindialog.cpp \
     main.cpp \
     mainwindow.cpp \
     registerdialog.cpp
 
 HEADERS += \
+    Singleton.h \
     global.h \
+    httpmanager.h \
     logindialog.h \
     mainwindow.h \
     registerdialog.h

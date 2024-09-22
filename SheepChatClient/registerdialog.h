@@ -2,6 +2,7 @@
 #define REGISTERDIALOG_H
 
 #include <QDialog>
+#include "global.h"
 /******************************************************************************
  *
  * @file       registerdialog.h
@@ -24,10 +25,13 @@ public:
     ~RegisterDialog();
 private slots:
     void getCode();
+    void slot_reg_mod_finish(ReqId id, QString res, ErrorCodes err);
 private:
     bool verifyEmail();
+    void initHttpHandlers();
 private:
     Ui::RegisterDialog *ui;
+    QMap<ReqId, std::function<void(const QJsonObject&)>> handlers_;
 };
 
 #endif // REGISTERDIALOG_H

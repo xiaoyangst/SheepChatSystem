@@ -6,7 +6,6 @@ LoginDialog::LoginDialog(QWidget *parent)
     , ui(new Ui::LoginDialog)
 {
     ui->setupUi(this);
-
     connect(ui->register_pushButton,&QPushButton::clicked,this,&LoginDialog::switchRegister);
 }
 
@@ -14,4 +13,5 @@ LoginDialog::~LoginDialog()
 {
     delete ui;
 }
+
 
